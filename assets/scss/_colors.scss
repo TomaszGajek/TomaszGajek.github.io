@@ -1,0 +1,33 @@
+$palette-custom:
+  rgb(232, 234, 246)
+  rgb(197, 203, 233)
+  rgb(159, 168, 218)
+  rgb(121, 133, 203)
+  rgb(92, 107, 192)
+  rgb(63, 81, 181)
+  rgb(57, 74, 174)
+  rgb(49, 64, 165)
+  rgb(41, 55, 157)
+  rgb(27, 39, 141)
+  rgb(198, 203, 255)
+  rgb(147, 157, 255)
+  rgb(96, 110, 255)
+  rgb(71, 87, 255)
+  #D42626
+;
+
+$palette-custom-50: nth($palette-custom, 1);
+$palette-custom-100: nth($palette-custom, 2);
+$palette-custom-200: nth($palette-custom, 3);
+$palette-custom-300: nth($palette-custom, 4);
+$palette-custom-400: nth($palette-custom, 5);
+$palette-custom-500: nth($palette-custom, 6);
+$palette-custom-600: nth($palette-custom, 7);
+$palette-custom-700: nth($palette-custom, 8);
+$palette-custom-800: nth($palette-custom, 9);
+$palette-custom-900: nth($palette-custom, 10);
+$palette-custom-A100: nth($palette-custom, 11);
+$palette-custom-A200: nth($palette-custom, 12);
+$palette-custom-A400: nth($palette-custom, 13);
+$palette-custom-A700: nth($palette-custom, 14);
+$palette-custom-D100: nth($palette-custom, 15);

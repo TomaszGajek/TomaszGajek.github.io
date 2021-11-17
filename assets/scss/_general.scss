@@ -1,0 +1,153 @@
+@import "normalize";
+@import "variables";
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+a,
+p,
+ul,
+ol,
+li {
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.row {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.btn {
+  border-radius: $main-border-radius;
+  background: white;
+  border: $border-on-hover;
+  display: inline-block;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  width: 180px;
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    background: black;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: $focus-box-shadow;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  padding-top: 100px;
+
+  @media only screen and (max-width: 991px){
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+.box {
+  width: 50%;
+
+  @media only screen and (max-width: 991px){
+    width: 100%;
+  }
+}
+
+.box-with-padding {
+  padding: 80px;
+
+  @media only screen and (max-width: 991px){
+    padding: 40px 0;
+  }
+}
+
+.main-image {
+  height: auto;
+  width: 50%;
+
+  @media only screen and (max-width: 991px){
+    width: 100%;
+    order: 2;
+  }
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.upper-line {
+  border-top: 1px solid black;
+  padding-top: 80px;
+}
+
+.skip-content-links {
+  margin-top: -61px;
+  margin-bottom: 0;
+  transition: all 0.5s ease-in-out;
+  background: black;
+  z-index: 1000;
+  position: relative;
+
+  &:focus-within {
+    margin-top: 0;
+  }
+}
+
+.skip-link {
+  margin: 0;
+  text-align: center;
+  padding: 15px 0;
+
+  a {
+    color: white;
+    outline: 2px solid white;
+    padding: 5px;
+    border-radius: 4px;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  padding: 50px 0;
+  background: $footer-background;
+}
